@@ -10,9 +10,9 @@
 
 ## 关于作者
 
-```javascript
-var ihubo = {
-  nickName  : "doZit",
-  site : "http://github.com/doZit"
-}
+```java
+public class author {
+  String nickName="doZit";
+  String site="http://github.com/doZit";
+};
 ```
