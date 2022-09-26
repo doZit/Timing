@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom_navigation"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/page_home"
+        style="@style/LinearLayoutStyle">
+        <Button
+            android:id="@+id/icon_home"
+            style="@style/ButtonStyleSpecial"
+            android:background="@drawable/home_press"/>
+        <TextView
+            android:id="@+id/text_home"
+            style="@style/BottomTextStyle"
+            android:text="@string/home"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/page_cycle"
+        style="@style/LinearLayoutStyle">
+        <Button
+            android:id="@+id/icon_cycle"
+            style="@style/ButtonStyleNormal"
+            android:background="@drawable/cycle_release"/>
+        <TextView
+            android:id="@+id/text_cycle"
+            style="@style/BottomTextStyle"
+            android:text="@string/cycle"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/page_add"
+        style="@style/LinearLayoutStyle">
+        <Button
+            android:id="@+id/icon_add"
+            style="@style/ButtonStyleNormal"
+            android:background="@drawable/add"/>
+        <TextView
+            android:id="@+id/text_add"
+            style="@style/BottomTextStyle"
+            android:text="@string/publish"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/page_message"
+        style="@style/LinearLayoutStyle">
+        <Button
+            android:id="@+id/icon_message"
+            style="@style/ButtonStyleNormal"
+            android:background="@drawable/message_release"/>
+        <TextView
+            android:id="@+id/text_message"
+            style="@style/BottomTextStyle"
+            android:text="@string/message"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/page_account"
+        style="@style/LinearLayoutStyle">
+        <Button
+            android:id="@+id/icon_account"
+            style="@style/ButtonStyleSpecial"
+            android:background="@drawable/me_release"/>
+        <TextView
+            android:id="@+id/text_account"
+            style="@style/BottomTextStyle"
+            android:text="@string/account"/>
+    </LinearLayout>
+</LinearLayout>

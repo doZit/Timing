@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/moon/Desktop/Timing/app/src/main/res/layout/bottom_button.xml" value="0.1703125" />
+        <entry key="..\:/Users/moon/Desktop/Timing/app/src/main/res/layout/bottom_pic.xml" value="0.1703125" />
+        <entry key="..\:/Users/moon/Desktop/Timing/app/src/main/res/layout/bottom_show_image.xml" value="0.1703125" />
+        <entry key="..\:/Users/moon/Desktop/Timing/app/src/main/res/layout/card_detail.xml" value="0.1703125" />
+        <entry key="..\:/Users/moon/Desktop/Timing/app/src/main/res/layout/choose_pic_item.xml" value="0.1703125" />
+        <entry key="..\:/Users/moon/Desktop/Timing/app/src/main/res/layout/community_page.xml" value="0.22" />
+        <entry key="..\:/Users/moon/Desktop/Timing/app/src/main/res/layout/create_talk.xml" value="0.175" />
+        <entry key="..\:/Users/moon/Desktop/Timing/app/src/main/res/layout/cycle_list.xml" value="0.175" />
+        <entry key="..\:/Users/moon/Desktop/Timing/app/src/main/res/layout/detial_remark_item.xml" value="0.175" />
+        <entry key="..\:/Users/moon/Desktop/Timing/app/src/main/res/layout/fragment_cycle.xml" value="0.22" />
+        <entry key="..\:/Users/moon/Desktop/Timing/app/src/main/res/layout/fragment_home.xml" value="0.1703125" />
+        <entry key="..\:/Users/moon/Desktop/Timing/app/src/main/res/layout/fragment_home_second_pager.xml" value="0.1703125" />
+        <entry key="..\:/Users/moon/Desktop/Timing/app/src/main/res/layout/fragment_instead.xml" value="0.175" />
+        <entry key="..\:/Users/moon/Desktop/Timing/app/src/main/res/layout/fragment_message.xml" value="0.175" />
+        <entry key="..\:/Users/moon/Desktop/Timing/app/src/main/res/layout/fragment_publish.xml" value="0.175" />
+        <entry key="..\:/Users/moon/Desktop/Timing/app/src/main/res/layout/home_pager.xml" value="0.175" />
+        <entry key="..\:/Users/moon/Desktop/Timing/app/src/main/res/layout/item.xml" value="0.1703125" />
+        <entry key="..\:/Users/moon/Desktop/Timing/app/src/main/res/layout/item2.xml" value="0.1703125" />
+        <entry key="..\:/Users/moon/Desktop/Timing/app/src/main/res/layout/layout_viewpager2_item.xml" value="0.175" />
+        <entry key="..\:/Users/moon/Desktop/Timing/app/src/main/res/layout/link_account.xml" value="0.175" />
+        <entry key="..\:/Users/moon/Desktop/Timing/app/src/main/res/layout/link_account_item.xml" value="0.175" />
+        <entry key="..\:/Users/moon/Desktop/Timing/app/src/main/res/layout/link_card_item.xml" value="0.175" />
+        <entry key="..\:/Users/moon/Desktop/Timing/app/src/main/res/layout/link_common1.xml" value="0.175" />
+        <entry key="..\:/Users/moon/Desktop/Timing/app/src/main/res/layout/pic_select_page.xml" value="0.175" />
+        <entry key="..\:/Users/moon/Desktop/Timing/app/src/main/res/layout/picture_storage.xml" value="0.175" />
+        <entry key="..\:/Users/moon/Desktop/Timing/app/src/main/res/menu/card_menu.xml" value="0.175" />
+        <entry key="..\:/Users/moon/Desktop/Timing/app/src/main/res/menu/other_select_menu.xml" value="0.175" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

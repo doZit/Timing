@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <ImageButton
+            android:id="@+id/head_pic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/default_head"/>
+        <TextView
+            android:id="@+id/nickname"
+            android:layout_width="260dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center|left"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+        <ImageButton
+            android:id="@+id/otherChoice"
+            style="@style/ButtonStyleNormal"
+            android:background="@drawable/card_others"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/tab_release_color"/>
+
+    <com.example.timing.NestedScrollableHost
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/photo_area"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
+    </com.example.timing.NestedScrollableHost>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/tab_release_color" />
+
+    <LinearLayout
+        android:id="@+id/mark_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/like"
+                style="@style/ButtonStyleNormal"
+                android:background="@drawable/heart"/>
+            <Button
+                android:id="@+id/collect"
+                style="@style/ButtonStyleSpecial"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/collect"/>
+            <Button
+                android:id="@+id/remarket"
+                style="@style/ButtonStyleNormal"
+                android:background="@drawable/remark"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/pic_dot"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="65dp"
+                android:layout_marginTop="10dp"/>
+            <Button
+                android:id="@+id/share_card"
+                style="@style/ButtonStyleNormal"
+                android:background="@drawable/zhuanfa"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/likes_count"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/text_content"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="30dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+</LinearLayout>

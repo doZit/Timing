@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".plant.CycleFragment">
+
+    <LinearLayout
+        android:id="@+id/layout_top_navigation"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+        <TextView
+            android:id="@+id/local_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="重庆"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+        <Button
+            android:id="@+id/local_community"
+            style="@style/ButtonStyleSpecial"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/down" />
+        <TextView
+            android:id="@+id/recommend_text"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="10dp"
+            android:text="百合社区"
+            android:textSize="15sp"
+            android:background="@drawable/search_text_border"
+            android:textColor="@color/tab_release_color"/>
+        <Button
+            android:id="@+id/search_community"
+            style="@style/ButtonStyleNormal"
+            android:background="@drawable/search"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/tab_release_color"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="推荐社区"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/communities"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

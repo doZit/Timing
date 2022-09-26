@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/pages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/pics"
+                style="@style/selectPicStyle"
+                android:textColor="@color/black"
+                android:text="相册"/>
+            <ImageView
+                android:id="@+id/pics_line"
+                style="@style/tabUnderLineStyle"
+                android:background="@drawable/tab_bottom_line"
+                android:layout_below="@+id/pics" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+            <TextView
+                android:id="@+id/take_view"
+                style="@style/selectPicStyle"
+                android:textColor="@color/tab_release_color"
+                android:text="拍视频"/>
+            <ImageView
+                android:id="@+id/view_line"
+                style="@style/tabUnderLineStyle"
+                android:background="@drawable/tab_bottom_line"
+                android:layout_below="@+id/take_view"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/take_photo"
+                style="@style/selectPicStyle"
+                android:textColor="@color/tab_release_color"
+                android:text="拍照"/>
+            <ImageView
+                android:id="@+id/photo_line"
+                style="@style/tabUnderLineStyle"
+                android:background="@drawable/tab_bottom_line"
+                android:layout_below="@+id/take_photo"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

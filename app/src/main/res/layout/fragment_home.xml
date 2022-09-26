@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".home.HomeFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/layout_top_navigation"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <Button
+            android:id="@+id/link_friend_button"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:background="@drawable/link"/>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/home_top_navigation"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            app:tabGravity="center"
+            app:tabMaxWidth="0dp"
+            app:tabIndicatorColor="@color/theme_color"
+            app:tabTextColor="@color/tab_release_color"
+            app:tabSelectedTextColor="@color/black"
+            app:tabTextAppearance="@style/TabTextStyle"
+            app:tabMode="fixed">
+        </com.google.android.material.tabs.TabLayout>
+
+        <Button
+            android:id="@+id/search_button"
+            style="@style/ButtonStyleNormal"
+            android:background="@drawable/search" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/Top_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_above="@+id/layout_top_navigation"
+        android:background="@color/tab_release_color" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/home_pages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="3dp"
+        android:background="@color/white"
+        android:layout_above="@+id/Top_line">
+    </androidx.viewpager2.widget.ViewPager2>
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.HomePagerFragment"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/home_second_navigation_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/home_second_navigation"
+            android:layout_width="350dp"
+            android:layout_height="20dp"
+            app:tabMaxWidth="0dp"
+            app:tabIndicatorHeight="0dp"
+            app:tabTextColor="@color/tab_release_color"
+            app:tabSelectedTextColor="@color/black"
+            app:tabTextAppearance="@style/TabSecondTextStyle"
+            app:tabMode="scrollable">
+        </com.google.android.material.tabs.TabLayout>
+        <Button
+            android:id="@+id/add_navigation"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/add_navigation"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/home_second_line"
+        android:layout_marginTop="10dp"
+        android:layout_width="2dp"
+        android:layout_height="2dp"
+        android:layout_above="@id/home_second_navigation_ll"/>
+
+    <com.example.timing.NestedScrollableHost
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/home_second_pages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/home_second_line" />
+    </com.example.timing.NestedScrollableHost>
+</LinearLayout>

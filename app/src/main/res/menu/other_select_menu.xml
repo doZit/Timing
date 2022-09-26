@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/menu1">
+        <item
+            android:id="@+id/account_secury"
+            android:title="账号与安全" />
+        <item
+            android:id="@+id/account_identify"
+            android:title="实名认证"/>
+        <item
+            android:id="@+id/set_private"
+            android:title="隐私设置"/>
+        <item
+            android:id="@+id/set_inform"
+            android:title="通知设置"/>
+        <item
+            android:id="@+id/normal_set"
+            android:title="通用设置"/>
+        <item
+            android:id="@+id/deep_color_mode"
+            android:title="深色模式"/>
+        <item
+            android:id="@+id/help"
+            android:title="帮助与客服"/>
+        <item
+            android:id="@+id/about"
+            android:title="关于"/>
+    </group>
+</menu>

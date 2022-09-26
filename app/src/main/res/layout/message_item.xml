@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginBottom="15dp"
+    android:id="@+id/root_item1">
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/massage_container"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+        <ImageView
+            android:id="@+id/talk_head"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/default_head"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/sender_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextNormal"
+                android:text="name"/>
+            <TextView
+                android:id="@+id/latest_massage"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                style="@style/TextSmallLittle"
+                android:layout_marginTop="2dp"
+                android:singleLine="true"
+                android:text="message"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/send_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2022-03-05"
+            android:gravity="right"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/tab_release_color"
+            android:textSize="12sp"/>
+<!--    </LinearLayout>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/delete_button"-->
+<!--        android:layout_width="80dp"-->
+<!--        android:layout_height="fill_parent"-->
+<!--        style="@style/TextNormal"-->
+<!--        android:gravity="center"-->
+<!--        android:text="删除"-->
+<!--        android:background="@color/red" />-->
+
+</LinearLayout>

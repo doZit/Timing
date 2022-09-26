@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".message.MessageFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="@string/message"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/create_talk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="创建聊天"
+            android:textSize="16sp"
+            android:textColor="@color/tab_release_color"/>
+    </LinearLayout>
+
+    <View
+        style="@style/LineStyle" />
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:layout_marginBottom="5dp"-->
+<!--        android:layout_gravity="center_horizontal">-->
+<!--        <TextView-->
+<!--            android:id="@+id/message_search"-->
+<!--            android:layout_width="300dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingTop="4dp"-->
+<!--            android:paddingBottom="4dp"-->
+<!--            android:paddingLeft="10dp"-->
+<!--            android:text="系统消息"-->
+<!--            android:textSize="16sp"-->
+<!--            android:layout_marginRight="15dp"-->
+<!--            android:background="@drawable/search_text_border"-->
+<!--            android:textColor="@color/tab_release_color"/>-->
+<!--        <Button-->
+<!--            android:id="@+id/search_community"-->
+<!--            style="@style/ButtonStyleNormal"-->
+<!--            android:background="@drawable/search"/>-->
+<!--    </LinearLayout>-->
+
+<!--    <View-->
+<!--        style="@style/LineStyle" />-->
+
+<!--    <LinearLayout-->
+<!--        style="@style/MassageLL1">-->
+<!--        <ImageView-->
+<!--            style="@style/ButtonBigger"-->
+<!--            android:background="@drawable/system_talk"/>-->
+<!--        <TextView-->
+<!--            style="@style/MassageText1"-->
+<!--            android:text="系统消息" />-->
+<!--        <Button-->
+<!--            android:id="@+id/system_list"-->
+<!--            style="@style/ButtonBigger"-->
+<!--            android:background="@drawable/into"/>-->
+<!--    </LinearLayout>-->
+<!--    <View-->
+<!--        style="@style/LineStyle" />-->
+<!--    <LinearLayout-->
+<!--        style="@style/MassageLL1">-->
+<!--        <ImageView-->
+<!--            style="@style/ButtonBigger"-->
+<!--            android:background="@drawable/friend_talk"/>-->
+<!--        <TextView-->
+<!--            style="@style/MassageText1"-->
+<!--            android:text="互动消息" />-->
+<!--        <Button-->
+<!--            android:id="@+id/friend_list"-->
+<!--            style="@style/ButtonBigger"-->
+<!--            android:background="@drawable/into"/>-->
+<!--    </LinearLayout>-->
+<!--    <View-->
+<!--        style="@style/LineStyle" />-->
+<!--    <LinearLayout-->
+<!--        style="@style/MassageLL1">-->
+<!--        <ImageView-->
+<!--            style="@style/ButtonBigger"-->
+<!--            android:background="@drawable/group_talk"/>-->
+<!--        <TextView-->
+<!--            style="@style/MassageText1"-->
+<!--            android:text="群聊" />-->
+<!--        <Button-->
+<!--            android:id="@+id/group_list"-->
+<!--            style="@style/ButtonBigger"-->
+<!--            android:background="@drawable/into"/>-->
+<!--    </LinearLayout>-->
+<!--    <View-->
+<!--        style="@style/LineStyle" />-->
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        style="@style/TextNormal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:text="最近消息"/>
+    <View
+        style="@style/LineStyle" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/resent_massage_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
